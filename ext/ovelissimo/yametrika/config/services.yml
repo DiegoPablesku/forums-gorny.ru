@@ -1,0 +1,9 @@
+services:
+    ovelissimo.yametrika.listener:
+        class: ovelissimo\yametrika\event\listener
+        arguments:
+            - '@config'
+            - '@template'
+            - '@user'
+        tags:
+            - { name: event.listener }
